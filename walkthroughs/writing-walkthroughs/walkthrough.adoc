@@ -9,18 +9,19 @@ The simplest walkthrough file might look like:
 = Demonstrating a custom walkthrough <1>
 
 A short description for the walkthrough. <2>
+A longer description appears before you start the walkthrough.
 
 == Show the flow with a task <3>
 
-A task is a set of procedures that need to be completed to achieve a goal.
+A task is a set of steps, possibly divided into subtasks, that must be completed to achieve a goal.
 State the task goal.
 
-=== Show the start step for a task as a H3 (===)<4>
+=== Show the start subtask<4>
 
 . Use numbered lists. <5>
 . Keep sentences short. <5>
 
-=== Show the finish step for a task <4>
+=== Show the finish subtask<4>
 
 . Try to keep procedures clear.
 . Finish a task with an accomplishment.
@@ -29,9 +30,9 @@ State the task goal.
 
 <1> Walkthrough title, you can only have one level 1 heading per file
 <2> The first line of the introduction is displayed as a tag line for the walkthrough.
-<3> A task contains one or more steps (level 3 headings)
-<4> Steps are displayed together on the {task} page
-<5> Procedures are numbered lists, one per step.
+<3> A task contains steps, possibly divided into subtasks
+<4> Subtasks are displayed together on the {task} page
+<5> Tasks or subtasks are numbered lists
 
 A typical {walkthrough} consist of:
 
