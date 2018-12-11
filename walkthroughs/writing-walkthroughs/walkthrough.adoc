@@ -5,6 +5,7 @@ An introduction to writing walkthroughs.
 
 The simplest walkthrough file might look like:
 
+
 ----
 = Demonstrating a custom walkthrough <1>
 
@@ -13,26 +14,38 @@ A longer description appears before you start the walkthrough.
 
 == Show the flow with a task <3>
 
-A task is a set of steps, possibly divided into subtasks, that must be completed to achieve a goal.
+. Use numbered lists. <4>
+. Keep sentences short. <4>
+
+----
+
+<1> Walkthrough title, you can only have one level 1 heading per file
+<2> The first line of the introduction is displayed as a tag line for the walkthrough
+<3> A task is a list of steps, possibly divided into subtasks as described later
+<4> A numbered list provides the steps the user must perform
+
+
+----
+
+== Show the flow with a task <1>
+
+This task is more complex and requires subtasks
 State the task goal.
 
-=== Show the start subtask<4>
+=== Show the start subtask<2>
 
-. Use numbered lists. <5>
-. Keep sentences short. <5>
+. Use numbered lists. 
+. Keep sentences short.
 
-=== Show the finish subtask<4>
+=== Show the finish subtask<2>
 
 . Try to keep procedures clear.
 . Finish a task with an accomplishment.
 
 ----
 
-<1> Walkthrough title, you can only have one level 1 heading per file
-<2> The first line of the introduction is displayed as a tag line for the walkthrough.
-<3> A task contains steps, possibly divided into subtasks
-<4> Subtasks are displayed together on the {task} page
-<5> Tasks or subtasks are numbered lists
+<1> This task contains is divided into subtasks, all numbered lists must be under subtasks
+<2> Subtasks are displayed together on the {task} page
 
 A typical {walkthrough} consist of:
 
