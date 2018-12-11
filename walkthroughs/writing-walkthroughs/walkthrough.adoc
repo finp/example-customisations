@@ -1,0 +1,112 @@
+= Writing Walkthroughs
+
+
+An introduction to writing walkthroughs.
+
+The simplest walkthrough file might look like:
+
+----
+= Demonstrating a custom walkthrough <1>
+
+A short description for the walkthrough. <2>
+
+== Show the flow with a task <3>
+
+A task is a set of procedures that need to be completed to achieve a goal.
+State the task goal.
+
+=== Show the start step for a task as a H3 (===)<4>
+
+. Use numbered lists. <5>
+. Keep sentences short. <5>
+
+=== Show the finish step for a task <4>
+
+. Try to keep procedures clear.
+. Finish a task with an accomplishment.
+
+----
+
+<1> Walkthrough title, you can only have one level 1 heading per file
+<2> The first line of the introduction is displayed as a tag line for the walkthrough.
+<3> A task contains one or more steps (level 3 headings)
+<4> Steps are displayed together on the {task} page
+<5> Procedures are numbered lists, one per step.
+
+A typical {walkthrough} consist of:
+
+* a title
+* a tag line, which also the first line of the introduction
+* an introduction with a description of the problem being solved in the {walkthrough}
+* 3 to 7 tasks, with a time estimate for each task
+* each task consists of one or more {step}s
+* each {step} is a procedure of between 3 and 12 actions
+
+That is a typical walkthrough, but there is no restriction on creating a walkthrough of 100 tasks and each task having a 100 steps, etc. The question you need to answer is "does such a walkthrough solve the problem described in the introduction?"
+
+The Integreatly web app allows you publish your own walkthroughs to a cluster using:
+
+* Asciidoc - a simple mark up language, similar to markdown
+* git repo - push your asciidoc file to a git repo
+* config file - edit this config file to point to your git repo
+* deploy web app - use openshift to redeploy your web app and view the new walkthrough
+
+
+The simplest walkthrough file might look like:
+
+----
+= Demonstrating a custom walkthrough <1>
+
+A short description for the walkthrough. <2>
+
+== Doing a task <3>
+
+=== Doing a step <4>
+
+. Do this first: <5>
+. Do this second: <5>
+----
+
+<1> Walkthrough title, you can only have one level 1 heading per file
+<2> The first line of the introduction is displayed as a tag line for the walkthrough.
+<3> A task contains one or more steps (level 3 headings)
+<4> Steps are displayed together on the {task} page
+<5> Procedures are numbered lists, one per step.
+
+Each of the tasks below demonstrates the features and constraints of the walkthrough file format.
+
+
+[type=walkthroughResource]
+=== Asciidoc
+* link:{openshift-host}/console[Open Console]
+* link:https://help.openshift.com/[Openshift Online Help Center]
+* link:https://blog.openshift.com/[Openshift Blog]
+
+
+
+[time=5]
+== Converting from markdown
+
+[time=5]
+== Adding steps
+
+[time=5]
+== Adding tasks
+
+[time=5]
+== Adding walkthrough resources
+
+[time=5]
+== Adding images
+
+[time=5]
+== Adding task resources
+
+[time=5]
+== Adding verifications 
+
+[time=5]
+== Using attributes
+
+[time=5]
+== Advanced asciidoc
